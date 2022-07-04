@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/botaoVoltar.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationContentDescription="Voltar"
+            app:navigationIcon="@drawable/ic_action_botao_voltar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/resumo_pacote_imagem"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar_layout"
+        tools:src="@drawable/sao_paulo_sp" />
+
+    <TextView
+        android:id="@+id/resumo_pacote_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resumo_pacote_imagem"
+        tools:text="@string/são_paulo" />
+
+    <TextView
+        android:id="@+id/resumo_pacote_dias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/resumo_pacote_local"
+        app:layout_constraintTop_toBottomOf="@id/resumo_pacote_local"
+        tools:text="@string/quantidade_dias" />
+
+    <TextView
+        android:id="@+id/resumo_pacote_data_viagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/resumo_pacote_dias"
+        app:layout_constraintTop_toBottomOf="@id/resumo_pacote_dias"
+        tools:text="08/12 - 10/12 de 2022" />
+
+    <TextView
+        android:id="@+id/resumo_pacote_preco_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/preco_final"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/resumo_pacote_dias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/resumo_pacote_dias"
+        app:layout_constraintTop_toTopOf="@+id/resumo_pacote_dias" />
+
+    <TextView
+        android:id="@+id/resumo_pacote_preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_green"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/resumo_pacote_data_viagem"
+        app:layout_constraintEnd_toEndOf="@+id/resumo_pacote_preco_final"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/resumo_pacote_data_viagem"
+        app:layout_constraintTop_toBottomOf="@id/resumo_pacote_preco_final"
+        app:layout_constraintVertical_bias="0.2"
+        tools:text="R$  300.00" />
+
+
+    <Button
+        android:id="@+id/resumo_pacote_botao_realizar_pagamento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_botao_realizar_pagamento"
+        android:text="@string/realizar_pagamento"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

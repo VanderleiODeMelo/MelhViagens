@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable-anydpi/ic_action_botao_voltar.xml" value="0.1355" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/background_botao_realizar_pagamento.xml" value="0.1915" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_lista_pacotes.xml" value="0.16455696202531644" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_pagamento.xml" value="0.21" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_resumo_da_compra.xml" value="0.2443820224719101" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_resumo_pacote.xml" value="0.1" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/item_pacote.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

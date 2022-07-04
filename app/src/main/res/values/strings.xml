@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">MelhoresDestinos</string>
+    <string name="brasil">Brasil</string>
+    <string name="especiais">Especiais</string>
+    <string name="sao_paulo">São Paulo</string>
+    <string name="dias">2 dias</string>
+    <string name="valor">R$ 243.99</string>
+    <string name="são_paulo">São Paulo</string>
+    <string name="quantidade_dias">2 dias</string>
+    <string name="preco_final">Preço final</string>
+    <string name="realizar_pagamento">Realizar pagamento</string>
+    <string name="informativo_cartao_credito">Digite as informações do cartão de crédito que você deseja usar para o pagamento</string>
+    <string name="valor_da_comprar">Valor da comprar</string>
+    <string name="numero_do_cartao">Número do cartao</string>
+    <string name="codigo_cvc">CVC</string>
+    <string name="nome_do_cartao">Nome do cartão</string>
+    <string name="finalizar_compra">Finalizar compra</string>
+    <string name="mes_do_cartao">MM</string>
+    <string name="ano_do_cartao">AA</string>
+    <string name="palavra_parabens">Parabéns!</string>
+    <string name="compra_realizada_com_sucesso">Compra realizada com sucesso</string>
+    <string name="confira_o_resumo_da_compra">Confira o resumo da compra</string>
+
 </resources>
