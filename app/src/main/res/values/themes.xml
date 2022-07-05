@@ -32,4 +32,7 @@
         <item name="titleTextAppearance">@style/ToolBarText</item>
         <item name="windowActionBar">false</item>
     </style>
+
+
+
 </resources>

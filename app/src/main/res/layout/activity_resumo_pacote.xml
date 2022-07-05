@@ -54,7 +54,7 @@
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@id/resumo_pacote_local"
         app:layout_constraintTop_toBottomOf="@id/resumo_pacote_local"
-        tools:text="@string/quantidade_dias" />
+        tools:text="@sample/pacotesViagens.json/pacotes/dias" />
 
     <TextView
         android:id="@+id/resumo_pacote_data_viagem"
@@ -91,7 +91,7 @@
         app:layout_constraintStart_toEndOf="@+id/resumo_pacote_data_viagem"
         app:layout_constraintTop_toBottomOf="@id/resumo_pacote_preco_final"
         app:layout_constraintVertical_bias="0.2"
-        tools:text="R$  300.00" />
+        tools:text="@sample/pacotesViagens.json/pacotes/preco" />
 
 
     <Button

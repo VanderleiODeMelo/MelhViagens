@@ -56,7 +56,7 @@
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@id/pagamento_valor_da_camprar"
         app:layout_constraintTop_toBottomOf="@id/pagamento_valor_da_camprar"
-        tools:text="R$ 300.00" />
+        tools:text="@sample/pacotesViagens.json/pacotes/preco" />
 
     <EditText
         android:id="@+id/pagamento_numero_do_cartao_credito"

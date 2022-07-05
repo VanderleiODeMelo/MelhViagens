@@ -1,124 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
 
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/layout_appbar"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content">
 
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/resumo_da_comprar_app_bar"
-            style="@style/botaoVoltar.Toolbar"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/layout_appbar"
             android:layout_width="match_parent"
-
-            android:layout_height="?actionBarSize"
-            app:navigationContentDescription="Voltar"
-            app:navigationIcon="@drawable/ic_action_botao_voltar" />
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
 
 
-    </com.google.android.material.appbar.AppBarLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/resumo_da_comprar_app_bar"
+                style="@style/botaoVoltar.Toolbar"
+                android:layout_width="match_parent"
 
-    <View
-        android:id="@+id/resumo_da_comprar_banner"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:background="@color/orange"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layout_appbar" />
-
-    <TextView
-        android:id="@+id/resumo_da_comprar_palavra_parabens"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/palavra_parabens"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_banner"
-        app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_banner"
-        app:layout_constraintTop_toTopOf="@id/resumo_da_comprar_banner" />
+                android:layout_height="?actionBarSize"
+                app:navigationContentDescription="Voltar"
+                app:navigationIcon="@drawable/ic_action_botao_voltar" />
 
 
-    <TextView
-        android:id="@+id/resumo_da_comprar_compra_sucesso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/compra_realizada_com_sucesso"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_palavra_parabens"
-        app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_palavra_parabens"
-        app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_palavra_parabens" />
+        </com.google.android.material.appbar.AppBarLayout>
 
-    <TextView
-        android:id="@+id/resumo_da_comprar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/confira_o_resumo_da_compra"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_compra_sucesso"
-        app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_compra_sucesso"
-        app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_banner" />
+        <View
+            android:id="@+id/resumo_da_comprar_banner"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:background="@color/orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_appbar" />
 
-    <ImageView
-        android:id="@+id/resumo_da_comprar_imagem"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="8dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_banner"
-        app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_banner"
-        app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar"
-        tools:src="@drawable/sao_paulo_sp" />
-
-    <TextView
-        android:id="@+id/resumo_da_comprar_local"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_imagem"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_imagem"
-        app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_imagem"
-        tools:text="São Paulo" />
-
-    <TextView
-        android:id="@+id/resumo_da_comprar_data_viagem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_local"
-        app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_local"
-        tools:text="08/12 - 10/12/ de 2022" />
-
-    <TextView
-        android:id="@+id/resumo_da_comprar_preco"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textAlignment="textStart"
-        android:textSize="17sp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_data_viagem"
-        app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_data_viagem"
-        tools:text="R$ 300.00" />
+        <TextView
+            android:id="@+id/resumo_da_comprar_palavra_parabens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/palavra_parabens"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_banner"
+            app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_banner"
+            app:layout_constraintTop_toTopOf="@id/resumo_da_comprar_banner" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/resumo_da_comprar_compra_sucesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/compra_realizada_com_sucesso"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_palavra_parabens"
+            app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_palavra_parabens"
+            app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_palavra_parabens" />
+
+        <TextView
+            android:id="@+id/resumo_da_comprar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/confira_o_resumo_da_compra"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_compra_sucesso"
+            app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_compra_sucesso"
+            app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_banner" />
+
+        <ImageView
+            android:id="@+id/resumo_da_comprar_imagem"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_banner"
+            app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_banner"
+            app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar"
+            tools:src="@drawable/sao_paulo_sp" />
+
+        <TextView
+            android:id="@+id/resumo_da_comprar_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@id/resumo_da_comprar_imagem"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_imagem"
+            app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_imagem"
+            tools:text="@sample/pacotesViagens.json/pacotes/local" />
+
+        <TextView
+            android:id="@+id/resumo_da_comprar_data_viagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_local"
+            app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_local"
+            tools:text="08/12 - 10/12/ de 2022" />
+
+        <TextView
+            android:id="@+id/resumo_da_comprar_preco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="textStart"
+            android:textSize="17sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/resumo_da_comprar_data_viagem"
+            app:layout_constraintTop_toBottomOf="@id/resumo_da_comprar_data_viagem"
+            tools:text="@sample/pacotesViagens.json/pacotes/preco" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

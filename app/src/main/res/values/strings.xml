@@ -20,5 +20,8 @@
     <string name="palavra_parabens">Parabéns!</string>
     <string name="compra_realizada_com_sucesso">Compra realizada com sucesso</string>
     <string name="confira_o_resumo_da_compra">Confira o resumo da compra</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="pesquisa_voz">Pesquisa_voz</string>
+    <string name="Banner">imagem_banner</string>
 
 </resources>

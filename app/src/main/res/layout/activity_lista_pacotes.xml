@@ -5,11 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/lista_pacotes_pesquisar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/botao_pesquisar_shape"
+        android:contentDescription="@string/pesquisar"
+        app:layout_constraintBottom_toTopOf="@id/listaPacotes_recyclerview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaPacotes_banner"
+        app:queryHint="Pesquisar" />
+
     <ImageView
         android:id="@+id/listaPacotes_banner"
         android:layout_width="0dp"
         android:layout_height="120dp"
         android:src="@color/purple_500"
+        android:contentDescription="@string/Banner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,10 +38,10 @@
         android:text="@string/especiais"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/listaPacotes_banner"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@id/listaPacotes_banner"
+        app:layout_constraintTop_toTopOf="@id/listaPacotes_banner" />
 
     <TextView
         android:id="@+id/listaPacotes_palavra_brasil"
@@ -41,6 +57,7 @@
         app:layout_constraintStart_toStartOf="@id/listaPacotes_palavra_especiais"
         app:layout_constraintTop_toBottomOf="@id/listaPacotes_palavra_especiais" />
 
+
     <androidx.recyclerview.widget.RecyclerView
 
         android:id="@+id/listaPacotes_recyclerview"
@@ -48,9 +65,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/listaPacotes_banner"
+        app:layout_constraintTop_toBottomOf="@id/lista_pacotes_pesquisar"
+        app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/item_pacote" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

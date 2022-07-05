@@ -1,5 +1,6 @@
 package com.alura.melhoresdestinos.ui.activity;
 
+import static androidx.appcompat.widget.SearchView.OnQueryTextListener;
 import static com.alura.melhoresdestinos.constantes.ConstantesActivitys.CHAVE_PACOTE;
 
 import android.content.Intent;
@@ -7,6 +8,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -20,6 +22,7 @@ import java.util.List;
 public class ListaPacotesActivity extends AppCompatActivity {
 
     public static final String TITULO_APPBAR = "Melhores destinos";
+    private ListaPacotesAdapter adapter;
 
 
     @Override
@@ -29,8 +32,30 @@ public class ListaPacotesActivity extends AppCompatActivity {
 
         setTitle(TITULO_APPBAR);
         configurarLista();
+        pesquisarPacoteViagens();
+
+    }
+
+    private void pesquisarPacoteViagens() {
+
+        SearchView idMenuPesquisa = findViewById(R.id.lista_pacotes_pesquisar);
+        idMenuPesquisa.setOnQueryTextListener(new OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
 
 
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+
+                adapter.getFilter().filter(newText);
+
+                return true;
+            }
+        });
     }
 
     private void configurarLista() {
@@ -48,7 +73,7 @@ public class ListaPacotesActivity extends AppCompatActivity {
     private void configuraAdapter(RecyclerView idRecyclerview) {
 
         List<Pacote> listaPacotes = PacoteDao.listaPacotes();
-        ListaPacotesAdapter adapter = new ListaPacotesAdapter(ListaPacotesActivity.this, listaPacotes);
+        adapter = new ListaPacotesAdapter(ListaPacotesActivity.this, listaPacotes);
         idRecyclerview.setAdapter(adapter);
 
         configurarItemPorClickListener(adapter);
@@ -56,17 +81,14 @@ public class ListaPacotesActivity extends AppCompatActivity {
 
     private void configurarItemPorClickListener(ListaPacotesAdapter adapter) {
 
-        adapter.setOnItemClickListener(new ListaPacotesAdapter.OnItemClickListener() {
-            @Override
-            public void onClick(Pacote pacote) {
+        adapter.setOnItemClickListener(pacote -> {
 
 
-                Intent vaiParaResumoPacoteActivity = new Intent(ListaPacotesActivity.this, ResumoPacoteActivity.class);
-                vaiParaResumoPacoteActivity.putExtra(CHAVE_PACOTE, pacote);
-                startActivity(vaiParaResumoPacoteActivity);
+            Intent vaiParaResumoPacoteActivity = new Intent(ListaPacotesActivity.this, ResumoPacoteActivity.class);
+            vaiParaResumoPacoteActivity.putExtra(CHAVE_PACOTE, pacote);
+            startActivity(vaiParaResumoPacoteActivity);
 
 
-            }
         });
     }
 
