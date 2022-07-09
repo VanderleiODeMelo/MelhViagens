@@ -3,14 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable-anydpi/ic_action_botao_cancelar.xml" value="0.1015" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable-anydpi/ic_action_botao_voltar.xml" value="0.1355" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/background_botao_realizar_pagamento.xml" value="0.1915" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/barra_pesquisa_background.xml" value="0.1" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/botao_pesquisar_shape.xml" value="0.1" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/botao_pesquisar_voz_background.xml" value="0.1" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/cursor_edit_text.xml" value="0.1185" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/cursor_edittext.xml" value="0.1" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/edit_text_cursor_botao_pesquisar_background.xml" value="0.142" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/splash_background.xml" value="0.15" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout-v28/activity_lista_pacotes.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout-v29/activity_lista_pacotes.xml" value="0.10092592592592593" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_lista_pacotes.xml" value="0.25" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_lista_pacotes_pesquisa.xml" value="0.25" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_pagamento.xml" value="0.21" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_resumo_da_compra.xml" value="0.2443820224719101" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_resumo_pacote.xml" value="0.22" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/item_pacote.xml" value="0.22" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/item_pesquisa.xml" value="0.33" />
       </map>
     </option>
   </component>

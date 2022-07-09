@@ -1,13 +1,10 @@
 package com.alura.melhoresdestinos.ui.recyclerview.adapter;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,22 +17,19 @@ import com.alura.melhoresdestinos.util.DiaUtil;
 import com.alura.melhoresdestinos.util.ImagemUtil;
 import com.alura.melhoresdestinos.util.MoedaUtil;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
-public class ListaPacotesAdapter extends RecyclerView.Adapter<ListaPacotesAdapter.PacoteViewHolder> implements Filterable {
+public class ListaPacotesAdapter extends RecyclerView.Adapter<ListaPacotesAdapter.PacoteViewHolder> {
 
 
     private final Context context;
     private final List<Pacote> listaPacotes;
     private static OnItemClickListener onItemClickListener;
-    private final List<Pacote> copiaListaParaFiltrar;
+
 
     public ListaPacotesAdapter(Context context, List<Pacote> listaPacotes) {
         this.context = context;
         this.listaPacotes = listaPacotes;
-        this.copiaListaParaFiltrar = new ArrayList<>(listaPacotes);
     }
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
@@ -57,70 +51,11 @@ public class ListaPacotesAdapter extends RecyclerView.Adapter<ListaPacotesAdapte
         Pacote pacote = listaPacotes.get(posicao);
         holder.vincular(pacote, context);
 
-
     }
-
     @Override
     public int getItemCount() {
         return listaPacotes.size();
     }
-
-    //aqui estou pegando filter
-    @Override
-    public Filter getFilter() {
-        return filter;
-    }
-
-    //temos que criar uma instância do filter
-    final Filter filter = new Filter() {
-        //aqui vamos realizar filtragem
-        @Override
-        protected FilterResults performFiltering(CharSequence charSequence) {
-
-            List<Pacote> filtrarLista = new ArrayList<>();
-
-            if (charSequence.toString().isEmpty()) {
-
-                filtrarLista.addAll(copiaListaParaFiltrar);
-
-            } else {
-
-                for (Pacote pacote : copiaListaParaFiltrar) {
-
-
-                    if (pacote.getLocal().toLowerCase().contains(charSequence.toString().toLowerCase())) {
-
-
-                        filtrarLista.add(pacote);
-
-
-                    }
-
-                }
-
-            }
-            FilterResults results = new FilterResults();
-            results.values = filtrarLista;
-
-
-            return results;
-        }
-
-        @SuppressLint("NotifyDataSetChanged")
-
-        @Override
-        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
-
-            listaPacotes.clear();
-
-
-            listaPacotes.addAll((Collection<? extends Pacote>) filterResults.values);
-
-            notifyDataSetChanged();
-
-
-        }
-    };
 
     static class PacoteViewHolder extends RecyclerView.ViewHolder {
 
@@ -136,7 +71,6 @@ public class ListaPacotesAdapter extends RecyclerView.Adapter<ListaPacotesAdapte
             idLocal = itemView.findViewById(R.id.item_pacote_local);
             idDias = itemView.findViewById(R.id.item_pacote_dias);
             idPreco = itemView.findViewById(R.id.item_pacote_preco);
-
 
         }
 
@@ -175,9 +109,7 @@ public class ListaPacotesAdapter extends RecyclerView.Adapter<ListaPacotesAdapte
             idLocal.setText(pacote.getLocal());
         }
 
-
     }
-
     public interface OnItemClickListener {
 
         void onClick(Pacote pacote);

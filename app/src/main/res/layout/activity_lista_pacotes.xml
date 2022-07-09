@@ -6,69 +6,77 @@
     android:layout_height="match_parent">
 
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/lista_pacotes_pesquisar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/botao_pesquisar_shape"
-        android:contentDescription="@string/pesquisar"
-        app:layout_constraintBottom_toTopOf="@id/listaPacotes_recyclerview"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listaPacotes_banner"
-        app:queryHint="Pesquisar" />
-
     <ImageView
-        android:id="@+id/listaPacotes_banner"
+        android:id="@+id/lista_pacotes_banner"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="200dp"
         android:src="@color/purple_500"
-        android:contentDescription="@string/Banner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/listaPacotes_palavra_especiais"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/especiais"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@id/listaPacotes_banner"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/listaPacotes_banner"
-        app:layout_constraintTop_toTopOf="@id/listaPacotes_banner" />
-
-    <TextView
-        android:id="@+id/listaPacotes_palavra_brasil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/brasil"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/listaPacotes_palavra_especiais"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/listaPacotes_palavra_especiais"
-        app:layout_constraintTop_toBottomOf="@id/listaPacotes_palavra_especiais" />
-
 
     <androidx.recyclerview.widget.RecyclerView
-
-        android:id="@+id/listaPacotes_recyclerview"
+        android:id="@+id/lista_pacotes_recyclerview"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lista_pacotes_pesquisar"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@id/lista_pacotes_banner"
+        app:layout_constraintStart_toStartOf="@id/lista_pacotes_banner"
+        app:layout_constraintTop_toBottomOf="@id/lista_pacotes_banner"
         tools:listitem="@layout/item_pacote" />
+
+    <EditText
+        android:id="@+id/lista_pacotes_pesquisar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="25dp"
+
+        android:background="@drawable/barra_pesquisa_background"
+        android:drawableStart="@drawable/ic_action_botao_pesquisa"
+        android:drawablePadding="10dp"
+        android:hint="@string/barra_pesquisar"
+        android:inputType="textFilter"
+        android:textCursorDrawable="@drawable/edit_text_cursor_botao_pesquisar_background"
+
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/lista_pacotes_botao_voz_pesquisar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/lista_pacotes_botao_cancelar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+
+        tools:drawableEnd="@drawable/ic_action_botao_cancelar"
+        app:layout_constraintBottom_toBottomOf="@id/lista_pacotes_pesquisar"
+        app:layout_constraintEnd_toEndOf="@id/lista_pacotes_pesquisar"
+        app:layout_constraintTop_toTopOf="@id/lista_pacotes_pesquisar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/lista_pacotes_botao_voz_pesquisar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/botao_pesquisar_voz_background"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_action_botao_pesquisa_por_voz"
+        android:tooltipText="Pesquisar por Voz"
+        app:layout_constraintBottom_toBottomOf="@+id/lista_pacotes_pesquisar"
+        app:layout_constraintEnd_toEndOf="@id/lista_pacotes_banner"
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintTop_toTopOf="@id/lista_pacotes_pesquisar" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

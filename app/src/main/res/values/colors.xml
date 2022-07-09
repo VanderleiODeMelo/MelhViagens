@@ -11,4 +11,7 @@
     <color name="orange">#FF8c00</color>
     <color name="CornflowerBlue">#6495ED </color>
     <color name="BlueViolet">#8A2BE2 </color>
+    <color name="azulClaro"> #75cceb</color>
+    <color name="marrom">#B8860B</color>
+    <color name="Firebrick">#B22222 </color>
 </resources>
