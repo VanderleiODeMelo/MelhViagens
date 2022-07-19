@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import com.alura.melhoresdestinos.R;
 import com.alura.melhoresdestinos.model.Pacote;
@@ -35,7 +34,6 @@ public class ResumoPacoteActivity extends AppCompatActivity {
         setTitle(TITLO_APPBAR);
 
         iniciarCampos();
-        criarAppBarResumoPacote();
         carregarInformacoes();
         botaoRealizarPagamentoListener();
     }
@@ -104,13 +102,5 @@ public class ResumoPacoteActivity extends AppCompatActivity {
         idDataViagem = findViewById(R.id.resumo_pacote_data_viagem);
         idPrecoViagem = findViewById(R.id.resumo_pacote_preco);
     }
-
-    private void criarAppBarResumoPacote() {
-        Toolbar toolbar = findViewById(R.id.app_bar);
-        setSupportActionBar(toolbar);
-
-        toolbar.setNavigationOnClickListener(view -> onBackPressed());
-    }
-
 
 }

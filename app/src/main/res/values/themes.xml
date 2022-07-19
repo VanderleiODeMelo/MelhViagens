@@ -1,6 +1,6 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Base application theme. -->
-    <style name="Theme.MelhoresDestinos" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.MelhoresDestinos" parent="Theme.AppCompat.Light.DarkActionBar">
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
@@ -13,25 +13,38 @@
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="autoCompleteTextViewStyle">@style/autoCompleteTextView</item>
+
 
     </style>
 
     <!-- Customize your theme here. -->
-    <!-- style 1 -->
-    <style name="ToolBarText" parent="TextAppearance.MaterialComponents.Button">
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">17sp</item>
+
+    <style name="autoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">italic</item>
 
     </style>
-    <!-- style 2 -->
-    <style name="botaoVoltar.Toolbar" parent="Widget.AppCompat.Toolbar">
 
-        <item name="android:background">@color/purple_500</item>
-        <item name="titleTextColor">@color/white</item>
-        <item name="theme">@style/Theme.MelhoresDestinos</item>
-        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
-        <item name="titleTextAppearance">@style/ToolBarText</item>
-        <item name="windowActionBar">false</item>
+
+    <style name="texto_alertdialog_personalizado_remover" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">italic</item>
+
+    </style>
+
+    <style name="texto_alertdialog_personalizado_botao" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+
     </style>
 
 

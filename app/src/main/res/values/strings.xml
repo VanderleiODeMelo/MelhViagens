@@ -22,7 +22,14 @@
     <string name="confira_o_resumo_da_compra">Confira o resumo da compra</string>
     <string name="Banner">imagem_banner</string>
     <string name="pesquisar_pacotes">Pesquisar pacotes</string>
-    <string name="pesquisar">"   Pesquisar"</string>
+    <string name="pesquisar">"Pesquisar pacotes..."</string>
     <string name="barra_pesquisar">Pesquisar</string>
+    <string name="remover">Remover</string>
+    <string name="texto_pacote_não_encontrado">Nenhum pacote encontrado!</string>
+
+    <string name="botao_dialog_personalizado_sim">Sim</string>
+    <string name="botao_dialog_personalizado_nao">Não</string>
+    <string name="dialog_personalizado_mensagem_remoção">Deseja remover o histórico de pesquisa ?</string>
+    <string name="lixeira">lixeira</string>
 
 </resources>

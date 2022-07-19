@@ -17,14 +17,14 @@
             app:layout_constraintTop_toTopOf="parent">
 
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/resumo_da_comprar_app_bar"
-                style="@style/botaoVoltar.Toolbar"
-                android:layout_width="match_parent"
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/resumo_da_comprar_app_bar"-->
+<!--                style="@style/botaoVoltar.Toolbar"-->
+<!--                android:layout_width="match_parent"-->
 
-                android:layout_height="?actionBarSize"
-                app:navigationContentDescription="Voltar"
-                app:navigationIcon="@drawable/ic_action_botao_voltar" />
+<!--                android:layout_height="?actionBarSize"-->
+<!--                app:navigationContentDescription="Voltar"-->
+<!--                app:navigationIcon="@drawable/ic_action_botao_voltar" />-->
 
 
         </com.google.android.material.appbar.AppBarLayout>

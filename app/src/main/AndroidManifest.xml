@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.alura.melhoresdestinos" >
+    package="com.alura.melhoresdestinos">
 
     <application
         android:allowBackup="true"
@@ -12,26 +12,59 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MelhoresDestinos"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+
+
         <activity
-            android:name=".ListaPacotesPesquisaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ListapacotesPesquisaActivity"
-            android:exported="false" />
+            android:name=".ui.activity.SearchableActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.activity.ListaPacotesActivity"
+            android:windowSoftInputMode="adjustPan|adjustNothing">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+        </activity>
+
+        <provider
+            android:name="com.alura.melhoresdestinos.provider.SearchProvider"
+            android:authorities="com.alura.melhoresdestinos.provider.SearchProvider" />
+
         <activity
             android:name=".ui.activity.SplashActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
+
+            android:exported="true"
             android:name=".ui.activity.ListaPacotesActivity"
-            android:exported="true" />
+            android:windowSoftInputMode="adjustPan|adjustNothing">
+
+
+            <!-- habilite a caixa de diálogo de pesquisa para enviar
+            pesquisas para SearchableActivity -->
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".ui.activity.SearchableActivity" />
+
+
+        </activity>
+
+
         <activity
             android:name=".ui.activity.ResumoPacoteActivity"
             android:exported="false" />
@@ -43,4 +76,11 @@
             android:exported="false" />
     </application>
 
+    <queries>
+        <intent>
+            <action android:name="android.speech.action.RECOGNIZE_SPEECH" />
+        </intent>
+    </queries>
+
 </manifest>
+

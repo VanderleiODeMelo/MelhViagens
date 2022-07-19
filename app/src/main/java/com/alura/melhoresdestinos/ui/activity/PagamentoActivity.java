@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import com.alura.melhoresdestinos.R;
 import com.alura.melhoresdestinos.model.Pacote;
@@ -27,7 +26,7 @@ public class PagamentoActivity extends AppCompatActivity {
 
         inicializarCampoPreco();
         setTitle(TITULO_APPBAR);
-        criarAppBarPagamento();
+
         carregarInformacoes();
         configurarBotaoFinalizarComprarListener();
 
@@ -75,10 +74,4 @@ public class PagamentoActivity extends AppCompatActivity {
         idPreco = findViewById(R.id.pagamento_preco);
     }
 
-    private void criarAppBarPagamento() {
-
-        Toolbar toolbar = findViewById(R.id.pagamento_appbar);
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationOnClickListener(view -> onBackPressed());
-    }
 }

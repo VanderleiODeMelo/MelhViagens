@@ -6,6 +6,9 @@
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable-anydpi/ic_action_botao_cancelar.xml" value="0.1015" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable-anydpi/ic_action_botao_voltar.xml" value="0.1355" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/background_botao_realizar_pagamento.xml" value="0.1915" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/background_dialog_botoes_verdes.xml" value="0.206" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/background_dialog_branco_remover.xml" value="0.161" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/background_dialog_remover.xml" value="0.1765" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/barra_pesquisa_background.xml" value="0.1" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/botao_pesquisar_shape.xml" value="0.1" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/drawable/botao_pesquisar_voz_background.xml" value="0.1" />
@@ -20,10 +23,21 @@
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_pagamento.xml" value="0.21" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_resumo_da_compra.xml" value="0.2443820224719101" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_resumo_pacote.xml" value="0.22" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_searchable.xml" value="0.25" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/item_pacote.xml" value="0.22" />
         <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/item_pesquisa.xml" value="0.33" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/layout/layout_personalizado_dialog_remocao.xml" value="0.22" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/menu/context_menu.xml" value="0.33" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/menu/menu_pesquisar.xml" value="0.209375" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/menu/menu_pesquisar_lista_pacotes_activity.xml" value="0.22" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/menu/menu_pesquisar_searchable_activity.xml" value="0.175" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/menu/menu_remover.xml" value="0.25" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/menu/menu_search.xml" value="0.33" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/menu/options_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/xml/listapacotesactivity_scroll.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/Trabalho/Desktop/Portfolio/AppMelhores_destinos/app/src/main/res/xml/searchable.xml" value="0.1" />
       </map>
     </option>
   </component>

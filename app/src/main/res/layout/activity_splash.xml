@@ -5,9 +5,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash"
     android:gravity="center"
-
     android:orientation="vertical"
     tools:context=".ui.activity.SplashActivity">
-
-
 </LinearLayout>

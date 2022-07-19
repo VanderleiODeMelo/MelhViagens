@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import com.alura.melhoresdestinos.R;
 import com.alura.melhoresdestinos.model.Pacote;
@@ -32,7 +31,6 @@ public class ResumoDaCompraActivity extends AppCompatActivity {
         setTitle(TITULO_APPBAR);
 
         inicializarCampos();
-        criarAppBarResumoDaCompra();
         carregarInformacoes();
 
 
@@ -87,10 +85,4 @@ public class ResumoDaCompraActivity extends AppCompatActivity {
         idPreco = findViewById(R.id.resumo_da_comprar_preco);
     }
 
-    private void criarAppBarResumoDaCompra() {
-
-        Toolbar toolbar = findViewById(R.id.resumo_da_comprar_app_bar);
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationOnClickListener(view -> onBackPressed());
-    }
 }

@@ -14,14 +14,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/app_bar"
-            style="@style/botaoVoltar.Toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            app:navigationContentDescription="Voltar"
-            app:navigationIcon="@drawable/ic_action_botao_voltar" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
@@ -32,7 +24,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appbar_layout"
-        tools:src="@drawable/sao_paulo_sp" />
+        tools:src="@drawable/sao_paulo_sp"
+        android:contentDescription="@string/Banner" />
 
     <TextView
         android:id="@+id/resumo_pacote_local"
@@ -99,10 +92,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+
         android:background="@drawable/background_botao_realizar_pagamento"
         android:text="@string/realizar_pagamento"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="#4E342E"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

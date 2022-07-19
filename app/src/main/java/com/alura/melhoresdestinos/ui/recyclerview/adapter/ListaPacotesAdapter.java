@@ -24,12 +24,14 @@ public class ListaPacotesAdapter extends RecyclerView.Adapter<ListaPacotesAdapte
 
     private final Context context;
     private final List<Pacote> listaPacotes;
+
     private static OnItemClickListener onItemClickListener;
 
 
     public ListaPacotesAdapter(Context context, List<Pacote> listaPacotes) {
         this.context = context;
         this.listaPacotes = listaPacotes;
+
     }
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
@@ -52,6 +54,7 @@ public class ListaPacotesAdapter extends RecyclerView.Adapter<ListaPacotesAdapte
         holder.vincular(pacote, context);
 
     }
+
     @Override
     public int getItemCount() {
         return listaPacotes.size();
@@ -110,6 +113,8 @@ public class ListaPacotesAdapter extends RecyclerView.Adapter<ListaPacotesAdapte
         }
 
     }
+
+
     public interface OnItemClickListener {
 
         void onClick(Pacote pacote);

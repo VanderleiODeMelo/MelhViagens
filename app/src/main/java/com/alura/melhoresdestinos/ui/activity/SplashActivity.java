@@ -21,7 +21,6 @@ public class SplashActivity extends AppCompatActivity implements Runnable {
 
         setContentView(R.layout.activity_splash);
 
-        //vai ter uma duração de 3 segundos
         Handler splashScreen = new Handler();
         splashScreen.postDelayed(SplashActivity.this, 1000);
 
@@ -38,7 +37,8 @@ public class SplashActivity extends AppCompatActivity implements Runnable {
     @Override
     public void run() {
 
-        Intent intent = new Intent(SplashActivity.this, ListaPacotesActivity.class);
+        Intent intent = new Intent(SplashActivity.this,
+                ListaPacotesActivity.class);
         startActivity(intent);
         finish();
 
