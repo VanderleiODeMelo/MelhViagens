@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.alura.melhoresdestinos.R;
@@ -36,6 +37,16 @@ public class ResumoPacoteActivity extends AppCompatActivity {
         iniciarCampos();
         carregarInformacoes();
         botaoRealizarPagamentoListener();
+        criarBotaoVoltar();
+
+    }
+
+    private void criarBotaoVoltar() {
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
     }
 
     private void botaoRealizarPagamentoListener() {
